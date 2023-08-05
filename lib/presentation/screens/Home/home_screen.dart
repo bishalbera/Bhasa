@@ -8,7 +8,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        bottomNavigationBar: MyCustomBottomNavigationBar(),
+        bottomNavigationBar: const MyCustomBottomNavigationBar(),
         appBar: AppBar(
           title: const Text('Home'),
           backgroundColor: Colors.blueAccent,
