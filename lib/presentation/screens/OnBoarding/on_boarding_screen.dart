@@ -1,3 +1,4 @@
+import 'package:bhasa/presentation/screens/Auth/SignIn/signIn_screen.dart';
 import 'package:bhasa/presentation/screens/Home/home_screen.dart';
 import 'package:bhasa/utils/move_screen.dart';
 import 'package:flutter/material.dart';
@@ -57,7 +58,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
             ),
             CustomContinueButton(
               onTap: () {
-                moveScreen(context, const HomeScreen());
+                moveScreen(context, const SigninScreen());
               },
               text: 'Continue',
               color: HexColor('#999b9e'),
