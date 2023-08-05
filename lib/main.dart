@@ -1,3 +1,4 @@
+import 'package:bhasa/presentation/screens/Splash/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
