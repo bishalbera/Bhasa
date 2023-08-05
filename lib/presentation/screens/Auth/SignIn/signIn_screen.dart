@@ -1,3 +1,4 @@
+import 'package:bhasa/presentation/screens/Auth/controllers/auth_controller.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -82,11 +83,13 @@ class _SigninScreenState extends State<SigninScreen> {
     numLook?.change(val.length.toDouble());
   }
 
-  void login() {
+  void login(BuildContext context) {
+    AuthController controller = AuthController();
+
     isChecking?.change(false);
     isHandsUp?.change(false);
-    if (_emailController.text == "admin" &&
-        _passwordController.text == "admin") {
+    if (controller.logIn(
+        context, _emailController.text, _passwordController.text)) {
       successTrigger?.fire();
     } else {
       failTrigger?.fire();

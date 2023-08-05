@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "638613950433",
+    "project_id": "bhasa-bishal-flutter",
+    "storage_bucket": "bhasa-bishal-flutter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:638613950433:android:d531137ea10eb334034ca0",
+        "android_client_info": {
+          "package_name": "com.example.bhasa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "638613950433-ik6t7pa6ql5jpmmduv9ed9ig076qv733.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRkMf9un_08sjr5fTpmTjNvVTwdIbTVpE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "638613950433-ik6t7pa6ql5jpmmduv9ed9ig076qv733.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
