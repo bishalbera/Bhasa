@@ -5,6 +5,7 @@ import 'package:page_transition/page_transition.dart';
 
 import '../../../utils/gradient._text.dart';
 import '../Home/home_screen.dart';
+import '../OnBoarding/on_boarding_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -28,7 +29,7 @@ class _SplashScreenState extends State<SplashScreen> {
       animationDuration: const Duration(seconds: 5),
       splashTransition: SplashTransition.fadeTransition,
       pageTransitionType: PageTransitionType.theme,
-      nextScreen: const HomeScreen(),
+      nextScreen: const OnBoardingScreen(),
     );
   }
 }
