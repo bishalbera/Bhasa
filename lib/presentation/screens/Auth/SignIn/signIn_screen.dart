@@ -84,16 +84,10 @@ class _SigninScreenState extends State<SigninScreen> {
   }
 
   void login(BuildContext context) {
-    AuthController controller = AuthController();
-
     isChecking?.change(false);
     isHandsUp?.change(false);
-    if (controller.logIn(
-        context, _emailController.text, _passwordController.text)) {
-      successTrigger?.fire();
-    } else {
-      failTrigger?.fire();
-    }
+    AuthController controller = AuthController();
+    controller.logIn(context, _emailController.text, _passwordController.text);
   }
 
   @override
@@ -206,7 +200,7 @@ class _SigninScreenState extends State<SigninScreen> {
                             onTap: () {},
                             child: GestureDetector(
                               onTap: () {
-                                login();
+                                login(context);
                               },
                               child: const CustomButton(
                                 text: 'Sign In',

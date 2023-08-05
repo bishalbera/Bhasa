@@ -7,6 +7,8 @@ import 'package:rive/rive.dart';
 
 import '../../../../common/widget/custom_button.dart';
 import '../../../../utils/move_screen.dart';
+import '../controllers/auth_controller.dart';
+import '../models/user.dart';
 
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({super.key});
@@ -80,6 +82,19 @@ class _SignUpScreenState extends State<SignUpScreen> {
 
   void moveEyeBalls(val) {
     numLook?.change(val.length.toDouble());
+  }
+
+  void signUp(BuildContext context) {
+    UserModel model = UserModel(
+        name: _nameController.text,
+        uid: '',
+        coins: '0',
+        email: _emailController.text,
+        password: _passwordController.text);
+
+    AuthController controller = AuthController();
+
+    controller.signUp(context, model);
   }
 
   @override
